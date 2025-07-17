@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1752111140 source:c:\users\danielc\documents\proyectos\c++\linkedlist\linkedlist\person.cpp
+	"Person.h"
+
+1752111126 c:\users\danielc\documents\proyectos\c++\linkedlist\linkedlist\person.h
+	<string>
+
+1752113003 source:c:\users\danielc\documents\proyectos\c++\linkedlist\linkedlist\main.cpp
+	<iostream>
+	"Person.h"
+	"Node.h"
+
+1752112975 source:c:\users\danielc\documents\proyectos\c++\linkedlist\linkedlist\node.cpp
+	"Node.h"
+	"Person.h"
+
+1752112966 c:\users\danielc\documents\proyectos\c++\linkedlist\linkedlist\node.h
+	"Person.h"
+
+1752727046 source:c:\users\wolf\documents\c++\linkedlist\linkedlist\main.cpp
+	<iostream>
+	"Person.h"
+	"PeopleList.h"
+	"Node.h"
+	"MainMenu.h"
+
+1752712430 c:\users\wolf\documents\c++\linkedlist\linkedlist\person.h
+	<string>
+
+1752163609 c:\users\wolf\documents\c++\linkedlist\linkedlist\node.h
+	"Person.h"
+
+1752716424 source:c:\users\wolf\documents\c++\linkedlist\linkedlist\node.cpp
+	"Node.h"
+	"Person.h"
+
+1752726969 source:c:\users\wolf\documents\c++\linkedlist\linkedlist\person.cpp
+	"Person.h"
+
+1752728661 source:c:\users\wolf\documents\c++\linkedlist\linkedlist\peoplelist.cpp
+	<iostream>
+	"PeopleList.h"
+	"Node.h"
+
+1752726280 c:\users\wolf\documents\c++\linkedlist\linkedlist\peoplelist.h
+	"Node.h"
+
+1752726993 c:\users\wolf\documents\c++\linkedlist\linkedlist\mainmenu.h
+	<iostream>
+	<cstring>
+	"Person.h"
+	"PeopleList.h"
+
+1752727916 source:c:\users\wolf\documents\c++\linkedlist\linkedlist\mainmenu.cpp
+	"MainMenu.h"
+
