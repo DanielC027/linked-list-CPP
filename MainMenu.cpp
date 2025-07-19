@@ -13,6 +13,9 @@ MainMenu::MainMenu(PeopleList* p):peopleList(p){
         } else if(opt == "2"){
             ClearScreen();
             ShowPeople();
+        } else if(opt == "3"){
+            ClearScreen();
+            UpdatePerson();
         } else if(opt == "0"){
             cout << "Exit..." << endl;
         } else {
@@ -28,6 +31,7 @@ string MainMenu::GetOption(){
     cout << "\t\tPEOPLE LIST" << endl;
     cout << "1) Add a person" << endl;
     cout << "2) Show people" << endl;
+    cout << "3) Update person" << endl;
     cout << "0) Exit" << endl;
     cout << "Choose an option: ";
 
@@ -61,6 +65,29 @@ void MainMenu::AddPerson(){
 void MainMenu::ShowPeople(){
     cout << "\t\tSHOW PEOPLE LIST" << endl;
     cout << peopleList->ShowPeople();
+}
+
+void MainMenu::UpdatePerson(){
+    Person * per = new Person();
+    string name = "";
+    string newName = "";
+    int age = 0;
+
+    cout << "\t\tUPDATE A PERSON" << endl;
+    cout << "Introduce the name of the person to update: ";
+    getline(cin,name);
+
+    cout << endl << "Introduce the new name: ";
+    getline(cin,newName);
+
+    cout << endl << "Introduce the new age: ";
+    cin >> age;
+    cin.ignore();
+
+    per->setName(newName);
+    per->setAge(age);
+    //cout << per->getName() << per->getAge();
+    peopleList->UpdatePerson(name,per);
 }
 
 void MainMenu::ClearScreen(){

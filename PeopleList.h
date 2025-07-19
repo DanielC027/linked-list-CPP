@@ -12,6 +12,7 @@ public:
 
     void AddPerson(Person*p);
     string ShowPeople();
+    void UpdatePerson(string nme, Person* per);
 };
 
 #endif // PEOPLELIST_H_INCLUDED

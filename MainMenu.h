@@ -21,6 +21,7 @@ public:
     string GetOption();
     void AddPerson();
     void ShowPeople();
+    void UpdatePerson();
     void ClearScreen();
     void EnterToContinue();
 };

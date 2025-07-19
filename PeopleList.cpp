@@ -35,3 +35,16 @@ string PeopleList::ShowPeople()
     }
     return strng;
 }
+
+
+void PeopleList::UpdatePerson(string nme, Person* per)
+{
+    Node* aux = anchor;
+    while(aux->getNext() != nullptr){
+        if(aux->getPerson()->getName() == nme){
+            aux->getPerson()->setName(per->getName());
+            aux->getPerson()->setAge(per->getAge());
+        }
+        aux = aux->getNext();
+    }
+}
